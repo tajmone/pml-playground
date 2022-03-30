@@ -1,0 +1,56 @@
+/***************
+ * Layout Rules
+ ***************/
+
+// SMACSS: Layout rules divide the page into sections.
+// Layouts hold one or more modules together.
+
+/* skeleton */
+
+.pml-doc-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.pml-doc-header, .pml-doc-footer {
+  flex-grow: 0;
+
+  /*
+  padding:1em;
+  */
+}
+
+.pml-doc-content {
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: row;
+
+  height: 100%; /* allow individual scroll bars for left, text, and right */
+}
+
+.pml-doc-left, .pml-doc-right {
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 15%;
+
+  background-color: #fafafa;
+}
+
+.pml-doc-text {
+  flex-grow: 0;
+  flex-shrink: 3;
+  max-width: 800px;
+}
+
+.pml-doc-left, .pml-doc-text, .pml-doc-right {
+  overflow-y: auto; /* show scrollbar if necessary */
+  scrollbar-width: thin; /* works only in Firefox (2021-01-28) */
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+// EOF //

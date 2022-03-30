@@ -1,0 +1,37 @@
+/*************
+ * Base Rules
+ *************/
+
+// SMACSS: A Base rule is applied to an element using an element selector,
+// a descendent selector, or a child selector, along with any pseudo-classes.
+// It doesn’t include any class or ID selectors. It is defining the default
+// styling for how that element should look in all occurrences on the page.
+
+/* basics */
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Verdana, "Open Sans", sans-serif;
+  line-height: 1.7;
+
+  /* can be used to globally increase/decrease text size
+  font-size: 1.2em;
+  */
+}
+
+/* titles */
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    color: darkgreen;
+
+    margin-top: 1em;
+    margin-bottom: 0px;
+}
+
+// EOF //
