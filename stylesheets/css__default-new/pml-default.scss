@@ -5,6 +5,8 @@
 // An attempt to reorganize the default CSS according to SMACSS guidelines,
 // using Sass sources, and improving the styles at the same time.
 
+@use "normalize";
+
 @use "base";
 @use "layout";
 @use "modules";
